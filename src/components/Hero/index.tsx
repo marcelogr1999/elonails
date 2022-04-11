@@ -1,5 +1,5 @@
 import Header from "../Header";
-import styles from "./hero.module.css";
+import styles from "./hero.module.scss";
 
 export default function Hero() {
   return (
