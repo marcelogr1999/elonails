@@ -1,11 +1,20 @@
-.footer{
-  background-color:#51235B;
-  color:white;
+.footer {
+  background-color: var(--dark-purple);
+  color: white;
   padding: 2rem 0;
   font-weight: 500;
 }
 
-.footerInfo{
+.footerInfo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Large screen */
+@media (min-width: 76rem) {
+  .footerInfo {
+    flex-direction: row;
+  }
 }
