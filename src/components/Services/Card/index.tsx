@@ -1,12 +1,12 @@
 import styles from "./card.module.scss";
-import Image from "next/image";
 import Service from "../../../../public/service.svg";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Card() {
   return (
     <div className={styles.card}>
-      <Image src={Service} alt="Service" />
+      <Image src={Service} alt="Service" height={80} layout="responsive" objectFit="cover" />
       <div className={styles.cardContent}>
         <span className={styles.cardTitle}>Nails Design</span>
         <span className={styles.cardDescription}>

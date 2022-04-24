@@ -1,7 +1,16 @@
-
 .cardGrid {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .cardGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .cardGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
